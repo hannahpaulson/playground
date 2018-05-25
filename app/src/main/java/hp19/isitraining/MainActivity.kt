@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
         setContentView(R.layout.activity_main)
         setupPermissions()
 
-        cameraButton.setOnClickListener {
+        fab.setOnClickListener {
             try {
                 val imageFile = createImageFile()
                 val callCameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
